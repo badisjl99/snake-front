@@ -11,7 +11,7 @@ const PieChartComponent = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get('http://localhost:5000/sentimentPercentage');
+        const response = await axios.get('https://snakeback-qzk7.onrender.com/sentimentPercentage');
         setSentimentPercentage(response.data);
       } catch (error) {
         console.error('Error fetching sentiment data:', error);
